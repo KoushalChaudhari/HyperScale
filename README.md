@@ -1,6 +1,6 @@
-﻿# RestoreAI â€” DIV2K SRGAN Super-Resolution
+﻿# HyperScale - DIV2K SRGAN Super-Resolution
 
-RestoreAI is an engineering mini-project for single-image super-resolution. Its primary experiment trains a residual SRGAN on the locally supplied DIV2K HR images paired with the corresponding `LR_unknown/X4` images. The existing Pix2Pix restoration implementation is retained for reference and legacy tests, but `app.py` and the SRGAN commands use the new SRGAN pipeline.
+HyperScale is an engineering mini-project for single-image super-resolution. Its primary experiment trains a residual SRGAN on the locally supplied DIV2K HR images paired with the corresponding `LR_unknown/X4` images. The existing Pix2Pix restoration implementation is retained for reference and legacy tests, but `app.py` and the SRGAN commands use the new SRGAN pipeline.
 
 **No quality claim is made before evaluating the trained checkpoints.** This project uses the local files already present; it does not download another dataset. `LR_unknown` comes from a non-official source and its degradation method is unknown.
 
