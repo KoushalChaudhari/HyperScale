@@ -1,0 +1,11 @@
+torch>=2.3,<3
+torchvision>=0.18,<1
+numpy>=1.26
+Pillow>=10
+opencv-python-headless>=4.9
+streamlit>=1.32
+matplotlib>=3.8
+scikit-image>=0.22
+PyYAML>=6
+tqdm>=4.66
+pytest>=8

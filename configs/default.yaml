@@ -1,0 +1,31 @@
+seed: 42
+project: srgan
+data:
+  hr_dir: DIV2K/DIV2K/DIV2K_train_HR
+  lr_root: DIV2K/DIV2K/DIV2K_train_LR_unknown
+  scale: 4
+  manifest: data/splits/div2k_train.json
+  pairing_report: outputs/dataset_pairing_report.json
+  validation_fraction: 0.1
+  lr_crop_size: 64
+training:
+  pretrain_epochs: 20
+  srgan_epochs: 30
+  batch_size: 4
+  workers: 0
+  generator_features: 32
+  residual_blocks: 8
+  generator_lr: 0.0001
+  discriminator_lr: 0.0001
+  adversarial_weight: 0.001
+  content_weight: 1.0
+  perceptual_weight: 0.0
+  vgg19_weights_path: null
+  mixed_precision: true
+  pretrain_limit_images: null
+  srgan_limit_images: null
+  max_minutes: 60
+paths:
+  output_dir: outputs
+  checkpoint_dir: checkpoints
+  log_dir: logs/srgan
